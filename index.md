@@ -9,7 +9,7 @@
   
 ## 下载并安装  
 >### 下载  
->[下载](https://github.com/Gsfess/Gsfess/raw/main/Gsfess.exe)
+>[下载](Gsfess.github.io/Download/)
 >### 源代码
 >[源代码](https://github.com/Gsfess/Gsfess)  
   
