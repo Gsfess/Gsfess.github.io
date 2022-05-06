@@ -15,5 +15,5 @@
   
 >![octocat](https://user-images.githubusercontent.com/104967574/166877111-02cb4407-d772-4737-9dda-82ab04c5d354.png)  
   
-  
+[想要使用Beta版？](https://Gsfess.github.io/Beta)
 官网由原来的zhang6300切换到了Gsfess  
