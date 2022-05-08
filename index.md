@@ -1,4 +1,5 @@
 > # 新版本，新开始  
+> ![图片](https://github.com/Gsfess/Gsfess.github.io/blob/main/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202022-05-08%20202257.png?raw=true)
   
 # 欢迎来到Gsfess的官网,祝愿天下的妈妈节日快乐
 ## 简介
