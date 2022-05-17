@@ -1,3 +1,4 @@
+[< 返回到主页](https://gsfess.github.io)
 # windows安装教程
 ## 1.安装python
 我们的应用程序依赖python，请安装python，安装python的时候，记得勾选PATH相关选项
