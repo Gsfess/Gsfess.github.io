@@ -1,7 +1,4 @@
-> # 新版本，新开始  
-> ![图片](https://github.com/Gsfess/Gsfess.github.io/blob/main/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202022-05-08%20202257.png?raw=true)
-  
-# 欢迎来到Gsfess的官网,祝愿天下的妈妈节日快乐
+# 欢迎来到Gsfess的官网
 ## 简介
 >## 简介
 >Gfess是一个很好的小学生科学的图形计算器，我们应该交给家长使用  
@@ -15,6 +12,7 @@
 >[下载](https://gsfess.github.io/Download)
 >### 源代码
 >[源代码](https://gsfess.github.io/source)  
+[不会安装？](https://gsfess.github.io/InstallationTutorial/)
   
 >![octocat](https://user-images.githubusercontent.com/104967574/166877111-02cb4407-d772-4737-9dda-82ab04c5d354.png)  
   
