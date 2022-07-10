@@ -8,7 +8,7 @@ import tkinter.ttk as ttk
 
 def msgbox():
     tkinter.messagebox.showinfo("关于" , """本软件由张峻熙制作,在GitHub上开源
-版本:Gsfess for windows GUI 1.0""")
+版本:Gsfess for windows GUI 1.1""")
 
 def quit(quit):
     top.quit()
@@ -60,10 +60,36 @@ def gongshichaxun_tkinter():
 
 
 
-"""
-正方体的工作已经全部完成
-"""
 
+# 园锥体积窗口
+
+def yuanzhui_tiji():
+    yz_tj = tk.Tk()
+    yz_tj.title("圆锥体积")
+    yz_tiji_text = ttk.Label(yz_tj , text = "请输入半径：")
+    yz_tiji_text.grid(column = 0 , row = 1)
+    yz_tiji_Entry = ttk.Entry(yz_tj)
+    yz_tiji_Entry.grid(column = 1 , row = 1)
+    # 
+    yz_tiji_text2 = ttk.Label(yz_tj , text = "请输入高：")
+    yz_tiji_text2.grid(column = 0 , row = 2)
+    yz_tiji_Entry2 = ttk.Entry(yz_tj)
+    yz_tiji_Entry2.grid(column = 1 , row = 2)
+    # 
+    def yz_tj_js():
+        yuanzhui_gao = float(yz_tiji_Entry2.get())
+        yuanzhui_banjing = float(yz_tiji_Entry.get())
+        yuanzhui_jieguo = 3.14 * yuanzhui_banjing * yuanzhui_banjing * yuanzhui_gao / 3
+        AAAA2 = ttk.Label(yz_tj , text = "结果是：")
+        AAAA2.grid(column = 1 , row = 3)
+        CCCC2 = ttk.Label(yz_tj , text = yuanzhui_jieguo)
+        CCCC2.grid(column = 2 , row = 3)
+    
+    zhengfangti_tiji_Button = ttk.Button(yz_tj , text = "计算" , command = yz_tj_js)
+    zhengfangti_tiji_Button.grid(column = 0 , row = 3)
+
+    yz_tj.mainloop()
+    
 
 # 正方体体积的窗口
 def zhengfangti_tiji():
@@ -76,7 +102,7 @@ def zhengfangti_tiji():
 
 
     def zhengfangti_tiji_jisuan():
-        zhengfangti_tiji_jieguo = int(zhengfangti_tiji_Entry.get())
+        zhengfangti_tiji_jieguo = float(zhengfangti_tiji_Entry.get())
         zhengfangti_tiji_jieguo = zhengfangti_tiji_jieguo * zhengfangti_tiji_jieguo * zhengfangti_tiji_jieguo
         AAAA = ttk.Label(zft_tj , text = "结果是：")
         AAAA.grid(column = 1 , row = 3)
@@ -101,7 +127,7 @@ def zhengfangxing_mianji_tkinter():
 
 
     def zhengfangti_tiji_jisuan():
-        zhengfangxing_mianji_jieguo = int(zhengfangxing_mianji_Entry.get())
+        zhengfangxing_mianji_jieguo = float(zhengfangxing_mianji_Entry.get())
         zhengfangtxing_mianji_jieguo = zhengfangxing_mianji_jieguo * zhengfangxing_mianji_jieguo
         AAAAA = ttk.Label(zfx_mj , text = "结果是：")
         AAAAA.grid(column = 1 , row = 2)
@@ -123,7 +149,7 @@ def zhengfangxing_zhouchang_tkinter():
 
 
     def zhengfangti_tiji_jisuan():
-        zhengfangxing_zhouchang_jieguo = int(zhengfangxing_zhouchang_Entry.get())
+        zhengfangxing_zhouchang_jieguo = float(zhengfangxing_zhouchang_Entry.get())
         zhengfangtxing_zhouchang_jieguo = zhengfangxing_zhouchang_jieguo * 4
         AAAAA = ttk.Label(zfx_zc , text = "结果是：")
         AAAAA.grid(column = 1 , row = 2)
@@ -153,7 +179,7 @@ def zhengfangtti_biaomianji():
     zhengfangti_biaomianji_Emtry = ttk.Entry(z_bmj)
     zhengfangti_biaomianji_Emtry.grid(column = 1 , row = 1)
     def zhengfangti_jieguo():
-        jieguo = int(zhengfangti_biaomianji_Emtry.get())
+        jieguo = float(zhengfangti_biaomianji_Emtry.get())
         jieguo = jieguo * jieguo * 6
         zhengfangti_biaomianji_jieguo = ttk.Label(z_bmj , text = "结果是：")
         zhengfangti_biaomianji_jieguo.grid(column = 1 , row = 2)
@@ -194,9 +220,9 @@ def changfangti_tiji_tkinter():
     changfangti_tiji_Entry2 = ttk.Entry(changfangti_tiji)
     changfangti_tiji_Entry2.grid(column = 1 , row = 3)
     def jisuan_neibu():
-        changfangti_tiji_chang = int(changfangti_tiji_Entry.get())
-        changfangti_tiji_kuan = int(changfangti_tiji_Entry1.get())
-        changfangti_tiji_gao = int(changfangti_tiji_Entry2.get())
+        changfangti_tiji_chang = float(changfangti_tiji_Entry.get())
+        changfangti_tiji_kuan = float(changfangti_tiji_Entry1.get())
+        changfangti_tiji_gao = float(changfangti_tiji_Entry2.get())
         changfangti_tiji_jieguo_jisuan = changfangti_tiji_chang * changfangti_tiji_kuan * changfangti_tiji_gao
         changfangti_tiji_jieguo_label = ttk.Label(changfangti_tiji , text = "结果是：")
         changfangti_tiji_jieguo_label.grid(column = 1 , row = 4)
@@ -227,9 +253,9 @@ def changfangti_biaomianji_tkinter():
     changfangti_biaomianji_Entry2 = ttk.Entry(changfangti_biaomianji)
     changfangti_biaomianji_Entry2.grid(column = 1 , row = 3)
     def changfangti_biaomianji_jieguo():
-        changfangti_biaomianji_chang = int(changfangti_biaomianji_Entry.get())
-        changfangti_biaomianji_kuan = int(changfangti_biaomianji_Entry2.get())
-        changfangti_biaomianji_gao = int(changfangti_biaomianji_Entry2.get())
+        changfangti_biaomianji_chang = float(changfangti_biaomianji_Entry.get())
+        changfangti_biaomianji_kuan = float(changfangti_biaomianji_Entry2.get())
+        changfangti_biaomianji_gao = float(changfangti_biaomianji_Entry2.get())
         changfangti_biaomianji_jieguo_bianliang = (changfangti_biaomianji_chang * changfangti_biaomianji_kuan + changfangti_biaomianji_chang * changfangti_biaomianji_gao + changfangti_biaomianji_kuan * changfangti_biaomianji_gao) * 2
         changfangti_biaomianji_jieguo_Lable = ttk.Label(changfangti_biaomianji , text= "结果是:")
         changfangti_biaomianji_jieguo_Lable.grid(column = 1 , row = 4)
@@ -243,7 +269,7 @@ def changfangti_biaomianji_tkinter():
 # 长方体主窗口
 
 def changfangti_tkinter():
-    xuanze1_changfangti = ttk.Tk()
+    xuanze1_changfangti = tk.Tk()
     xuanze1_changfangti.title("长方体")
     xuanze1_changfangti1 = ttk.Button(xuanze1_changfangti , text = "          表面积         " , command = changfangti_biaomianji_tkinter)
     xuanze1_changfangti1.pack(side = "left")
@@ -266,8 +292,8 @@ def yuanzhu_tiji_tkinter():
     yuanzhu_tiji_Entry2 = ttk.Entry(yuanzhu_tiji)
     yuanzhu_tiji_Entry2.grid(column= 1 , row= 2)
     def yuanzhu_tiji_jisuan_hanshu():
-        banjing_tiji = int(yuanzhu_tiji_Entry.get())
-        gao_tiji = int(yuanzhu_tiji_Entry2.get())
+        banjing_tiji = float(yuanzhu_tiji_Entry.get())
+        gao_tiji = float(yuanzhu_tiji_Entry2.get())
         jieguo_tiji = 3.14 * banjing_tiji * banjing_tiji * gao_tiji
         jieguo_Lable_jieguo = ttk.Label(yuanzhu_tiji , text= "结果是：")
         jieguo_Lable_jieguo.grid(column= 1 , row= 3)
@@ -327,8 +353,8 @@ def changfangxing_zhouchang_tkinter():
     changfangxing_zhouchang_Entry2 = ttk.Entry(changfangxing_zhouchang)
     changfangxing_zhouchang_Entry2.grid(column= 1 , row= 2)
     def changfangxing_mianji_jisuan_tkinter():
-        changfangxing_chang_zhouchang = int(changfangxing_zhouchang_Entry.get())
-        changfangxing_kuan_zhouchang = int(changfangxing_zhouchang_Entry2.get())
+        changfangxing_chang_zhouchang = float(changfangxing_zhouchang_Entry.get())
+        changfangxing_kuan_zhouchang = float(changfangxing_zhouchang_Entry2.get())
         changfangxing_jieguo_zhouchang = (changfangxing_chang_zhouchang + changfangxing_kuan_zhouchang) * 2
         changfangxing_jieguo_Label_zhouchang = ttk.Label(changfangxing_zhouchang , text= "结果是：")
         changfangxing_jieguo_Label_zhouchang.grid(column= 1 , row= 3)
@@ -353,8 +379,8 @@ def changfangxing_mianji_tkinter():
     changfangxing_mianji_Entry2 = ttk.Entry(changfangxing_mianji)
     changfangxing_mianji_Entry2.grid(column= 1 , row= 2)
     def changfangxing_mianji_jisuan_tkinter():
-        changfangxing_chang = int(changfangxing_mianji_Entry.get())
-        changfangxing_kuan = int(changfangxing_mianji_Entry2.get())
+        changfangxing_chang = float(changfangxing_mianji_Entry.get())
+        changfangxing_kuan = float(changfangxing_mianji_Entry2.get())
         changfangxing_jieguo = changfangxing_chang * changfangxing_kuan
         changfangxing_jieguo_Label = ttk.Label(changfangxing_mianji , text= "结果是：")
         changfangxing_jieguo_Label.grid(column= 1 , row= 3)
@@ -392,8 +418,8 @@ def pingxingsibianxing_tkinter():
     pingxingsibianxing_Entry2 = ttk.Entry(pingxingsibianxing)
     pingxingsibianxing_Entry2.grid(column= 1 , row= 2)
     def pingxingsibianxing_jisuan_hanshu():
-        pingxingsibianxing_di = int(pingxingsibianxing_Entry.get())
-        pingxingsibianxing_gao = int(pingxingsibianxing_Entry2.get())
+        pingxingsibianxing_di = float(pingxingsibianxing_Entry.get())
+        pingxingsibianxing_gao = float(pingxingsibianxing_Entry2.get())
         pingxingsibianxing_jieguo = pingxingsibianxing_di * pingxingsibianxing_gao
         changfangxing_jieguo_Label = ttk.Label(pingxingsibianxing , text= "结果是：")
         changfangxing_jieguo_Label.grid(column= 1 , row= 3)
@@ -444,8 +470,8 @@ def sanjiaoxing_tkinter():
     sanjiaoxing_Entry2 = ttk.Entry(sanjiaoxing)
     sanjiaoxing_Entry2.grid(column= 1 , row= 2)
     def sanjiaoxing_jisuan_hanshu():
-        sanjiaoxing_di = int(sanjiaoxing_Entry.get())
-        sanjiaoxing_gao = int(sanjiaoxing_Entry2.get())
+        sanjiaoxing_di = float(sanjiaoxing_Entry.get())
+        sanjiaoxing_gao = float(sanjiaoxing_Entry2.get())
         sanjiaoxing_jieguo = sanjiaoxing_di * sanjiaoxing_gao / 2
         changfangxing_jieguo_Label = ttk.Label(sanjiaoxing , text= "结果是：")
         changfangxing_jieguo_Label.grid(column= 1 , row= 3)
@@ -522,6 +548,8 @@ Button2 = ttk.Button(top , text = "长方体" , command = changfangti_tkinter)
 Button2.pack()
 Button3 = ttk.Button(top , text = "圆柱体" , command = yuanzhu_tkinter)
 Button3.pack()
+Button5 = ttk.Button(top , text = "圆锥" , command= yuanzhui_tiji)
+Button5.pack()
 text55 = ttk.Label(top , text = "-----------------------------------------------------")
 text55.pack()
 B = ttk.Label(top , text = "平面图形")
@@ -547,5 +575,6 @@ text88.pack()
 Button5 = ttk.Button(top , text = "公式查询" , command = gongshichaxun_tkinter)
 Button5.pack()
 top.mainloop()
+
 
 ```
